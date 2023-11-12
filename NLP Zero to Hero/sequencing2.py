@@ -1,5 +1,5 @@
-# Part 2
-# before handling encounter with words not in the corpus (a collection of authentic text) or word index
+# part 2
+# After handling encounter with words not in the word index or corpus
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.preprocessing.text import Tokenizer # getting the tokenizer APIs
@@ -18,6 +18,7 @@ sequences = tokenizer.texts_to_sequences(sentences) # creating sequences of text
 
 print(word_index)
 print(sequences)
+
 
 # Try with words that the tokenizer wasn't fit to
 test_data = [
